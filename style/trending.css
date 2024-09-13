@@ -1,10 +1,128 @@
 .trending {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  justify-content: left;
+  align-items: start;
+  padding-top: 60px;
+  /* right: 0;
+  top: 70px;
+  bottom: 0; */
   flex: 1;
-  border: 1px solid white;
+  border-left: 1px solid rgb(47, 51, 54);
+  height: 100%;
+}
+
+.subcribe-to-premium {
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 15px;
+  width: 300px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+}
+
+.title {
+  color: white;
+  font-size: 22px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-family: Arial;
+}
+
+.subscribe-btn {
+  color: white;
+  background-color: rgb(29, 155, 240);
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+
+
+.who-to-follow-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 15px;
+  width: 300px;
+  height: 270px;
+  margin-left: 30px;
+  padding: 15px 20px;
+  justify-content: space-between;
+}
+
+.follow-title {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture-container {
+  width: 50px;
+}
+
+.profile-picture {
+  height: 45px;
+  border-radius: 25px;
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.username-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.username-icon i {
+  margin-left: 10px;
+  font-size: 12px;
+  color: rgb(29, 155, 240);
+}
+
+.username {
+  color: white;
+  font-size: 17px;
+  font-family: Arial;
+}
+
+.username-tag {
+  color: rgb(130, 130, 131);
+  font-family: Arial;
+}
+
+.follow-btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+
+.follow-btn {
+  padding: 8px 8px;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
