@@ -22,6 +22,13 @@ p {
   height: 100vh;
 }
 
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden
+}
+
+
 i {
   color: white;
   transform: scale(1.5);
