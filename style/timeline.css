@@ -16,6 +16,7 @@
   position: fixed;
   height: 50px;
   width: 650px;
+  background-color: black;
   border-bottom: 1px solid rgb(47, 51, 54);
 }
 
@@ -140,6 +141,7 @@
   border-bottom: 1px solid rgb(47, 51, 54);
   height: 50px;
   align-items: center;
+  flex-shrink: 0;
   justify-content: center;
 }
 
@@ -162,8 +164,118 @@
 
 
 
+.news {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  max-height: 700px;
+  border-bottom: 1px solid rgb(47, 51, 54);
+  padding: 10px
+}
+
+.news:hover {
+  background-color: rgba(30, 29, 29, 0.285);
+}
+
+.post-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.author-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author {
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.author-verified-icon {
+  margin-left: 10px;
+	color: rgb(29, 155, 240);
+}
+
+.author-tag {
+  color: #8f9193;
+  font-family: Arial;
+  margin-left: 10px;
+}
 
 
+.post-description-container {
+  display: flex;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+.post-description {
+  color: white;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.post-image {
+  display: flex;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+
+.post-image img {
+  max-width: 572px;
+  /* max-height: 360px; */
+  border-radius: 15px;
+}
+
+
+.post-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.action-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.action-icon p {
+  color: white;
+  margin-left: 10px;
+}
+
+
+.book-share-container {
+  display: flex;
+  flex-direction: row;
+  width: 70px;
+  padding-left: 25px;
+}
+
+.share {
+  padding-left: 10px;
+}
 
 
