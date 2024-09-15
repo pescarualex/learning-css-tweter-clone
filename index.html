@@ -15,6 +15,8 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
 	</head>
  
 	<body>
@@ -31,9 +33,10 @@
 						<img class="logo" src="./logo/x-logo.jpg" alt="x logo" />
 					</a>
 					
-					<a href="#" class="menu-btn-container">
-							<i class="fa fa-home" aria-hidden="true"></i>
-							<p class="menu-btn">Home</p>
+					<a href="./index.html" class="menu-btn-container">
+							<i class="fa fa-home Home" aria-hidden="true"></i>
+							<p class="menu-btn home">Home</p>
+							<span class="bullet"></span>
 					</a>
 	
 					<a href="#" class="menu-btn-container">
@@ -67,7 +70,7 @@
 					</a>
 	
 					<a href="#" class="menu-btn-container">
-						<i class="fa fa-users" aria-hidden="true"></i>
+						<i class="fa fa-user-o" aria-hidden="true"></i>
 						<p class="menu-btn">Communities</p>
 					</a>
 	
@@ -101,12 +104,61 @@
 
 			<div class="timeline">
 				<div class="header">
-					<a href="#">For You</a>
-					<a href="#"> Following</a>
+					<a href="#" class="header-link active">For You</a>
+					<a href="#" class="header-link"> Following</a>
 				</div>
 
+				<div class="post-tweet">
+					<div class="avatar-picture-container">
+						<img src="./images/channel-6-profile.jpeg" alt="">
+					</div>
+
+					<div class="icons-container">
+						<input class="input-text" type="text" placeholder="What is happening?!">
+
+						<div class="icons">
+							<div class="icon-container">
+								<button class="icon">
+									<i class="fa fa-picture-o" aria-hidden="true"></i>
+								</button>
+	
+								<button class="icon">
+									<i class="fa fa-file-video-o" aria-hidden="true"></i>
+								</button>
+	
+								<button class="icon">
+									<i class="fa fa-list-ol" aria-hidden="true"></i>
+								</button>
+	
+								<button class="icon">
+									<i class="fa fa-smile-o" aria-hidden="true"></i>
+								</button>
+	
+								<button class="icon">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+								</button>
+	
+								<button class="icon" disabled>
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+								</button>
+							</div>
+
+							<div class="buttons">
+								<button class="post-tweet-btn" disabled>Post</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
 				<div class="news">
-					<div class="post-tweet">
+					<div class="">
 						something here
 					</div>
 				</div>
@@ -117,7 +169,7 @@
 
 			<div class="trending">
 				<div class="search-bar-container">
-					<i class="fa fa-search search-icon" aria-hidden="true"></i>
+					<i class="fa fa-search search-bar-icon" aria-hidden="true"></i>
 					<input class="search-bar" type="text" placeholder="Search">
 				</div>
 
@@ -354,6 +406,10 @@
 						<p class="trend-posts">878k posts</p>
 					</div>
 
+
+					<div class="show-more-link">
+						<a href="./index.html">Show More</a>
+					</div>
 
 				</div>
 

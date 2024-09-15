@@ -21,8 +21,7 @@
 }
 
 .logo {
-	height: 50px;
-	/* margin-left: 334px; */
+	height: 60px;
 	margin-right: 30px;
 	padding: 10px 15px;
 	border-radius: 40px;
@@ -36,32 +35,51 @@
 	display: flex;
 	gap: 20px;
 	align-items: flex-start;
-	/* margin-left: 340px; */
 	margin-top: 2px;
 	margin-bottom: 2px;
+  align-items: center;
 	justify-content: flex-start;
 	cursor: pointer;
 	padding: 15px 18px;
 	text-decoration: none;
 	transition: background-color 0.15s;
 	border-radius: 30px;
+  position: relative;
 }
 
 .menu-btn {
-	color: white;
+	color: rgb(168, 168, 168);
 	background-color: transparent;
 	border: none;
-	font-size: 22px;
+	font-size: 20px;
 	cursor: pointer;
 	font-family: Arial;
+}
+
+.menu-btn-container i {
+  color: rgb(168, 168, 168);
+  font-size: 20px;
 }
 
 .menu-btn-container:hover {
 	background-color: rgb(38, 38, 38);
 }
 
+.bullet {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(29, 155, 240);
+  border-radius: 5px;
+  position: relative;
+  left: -98px;
+  top: -12px;
+}
+
+.home {
+  color: white;
+}
+
 .post {
-	/* margin-left: 340px; */
 	margin-top: 10px;
 	width: 220px;
 	border: none;
