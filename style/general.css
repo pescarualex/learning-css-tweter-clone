@@ -14,10 +14,10 @@ p {
 
 .container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
   justify-content: space-between; /* Spațiu între elemente */
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   height: 100vh;
 }
