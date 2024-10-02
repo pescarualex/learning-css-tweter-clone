@@ -4,33 +4,35 @@
 	flex-shrink: 1;
 	height: 100%;
 	width: 100%;
-	min-width: 70px;
+	min-width: 50px;
+	flex-basis: 50px;
 	border-right: 1px solid rgb(47, 51, 54);
   overflow-y: hidden;
-	position: relative;
-	align-items: stretch;
+	/* position: relative; */
+	/* align-items: flex-end; */
+	justify-content: flex-end;
 }
 
 
 .menu-btns {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
 	flex: 1;
 	height: 100%;
+	width: 100%;
+	min-width: 50px;
 	margin-right: 10px;
 	margin-left: 10px;
-	width: 100%;
-	min-width: 70px;
+	flex-basis: 50px;
 }
 
 .menu-btn {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	/* justify-content: flex-start; */
 	width: 100%;
-	min-width: 70px;
-	position: relative;
+
 }
 
 .logo {
@@ -94,14 +96,11 @@
 
 
 
-
-
-
 .post {
 	display: flex;
 	align-items: flex-start;
 	margin-top: 10px;
-	width: 220px;
+	width: 280px;
 	border: none;
 	border-radius: 50px;
 	color: white;
@@ -115,13 +114,12 @@
 
 
 
-
-
 .profile-container {
 	display: flex;
 	/* flex-direction: row; */
 	align-items: flex-end;
 	justify-content: flex-end;
+	flex: 1;
 	height: 100%;
 	width: 100%;
 	padding-bottom: 10px;
@@ -176,53 +174,61 @@
 }
 
 
-/* @media (max-width: 1400px) {
+@media (max-width: 1500px) {
+
 	.menu {
-		width: 70px;
+		min-width: 70px;
+		max-width: 70px;
+		flex-shrink: 1;
+		flex-grow: 1;
+		align-items: flex-end;
 	}
 
-
-
 	.menu-btns {
-		width: 70px;
-		max-width: none;
+		min-width: 45px;
+		flex: none;
+		flex-shrink: 1;
+		align-items: flex-end;
 	}
 
 	.menu-btn {
-		width: 100%;
-		max-width: none;
+		min-width: 45px;
+		flex-shrink: 1;
+		align-items: flex-end;
 	}
 
 	.menu-btn-container {
-		width: auto;
+		width: 45px;
+		min-height: 50px;
 	}
 
-	.menu-btn-container .menu-btn {
+	.menu-btna {
 		display: none;
 	}
 
-	.profile-container, 
-	.menu-btn {
-		width: 70px;
+	.post {
+		width: 45px;
+		font-size: 13px;
+		/* padding: 0; */
+		height: 50px;
+		padding: 2px;
 	}
 
-	.post {
-		width: 40px;
-		height: 40px;
-		padding: 0px;
-		margin-left: 5px;
-		font-size: 12px;
+	.profile-container {
+		width: 45px;
 	}
 
 	.profile {
-		width: 70px;
+		width: 55px;
+	}
+
+	.profile i {
+		display: none;
 	}
 
 	.user-info-container {
 		display: none;
 	}
 
-	.profile-container i {
-		display: none;
-	}
-} */
+
+}

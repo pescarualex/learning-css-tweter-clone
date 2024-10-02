@@ -4,19 +4,15 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex: 1;
-	flex-shrink: 1;
+	flex-shrink: 0;
 	/* border-left: 1px solid rgb(47, 51, 54); */
 	height: 100%;
 	width: 100%;
-	min-width: 200px;
+	/* min-width: 200px; */
 	overflow-y: auto;
 }
 
-@media (max-width: 1233px) {
-	.trending {
-		display: none;
-	}
-}
+
 
 
 
@@ -261,4 +257,55 @@
 	color: rgb(143, 145, 147);
 	font-size: 14px;
 	font-family: Arial;
+}
+
+
+@media (max-width: 1125px) {
+	.trending {
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+
+	.search-bar-container {
+		/* display: none; */
+		width: 300px;
+	}
+
+	.subcribe-to-premium {
+		/* display: none; */
+		width: 300px;
+	}
+
+	.who-to-follow-section {
+		/* display: none; */
+		width: 300px;
+	}
+
+	.romania-trends {
+		/* display: none; */
+		width: 300px;
+	}
+}
+
+
+@media (max-width: 1045px) {
+	.search-bar-container {
+		display: none;
+		/* width: 300px; */
+	}
+
+	.subcribe-to-premium {
+		display: none;
+		/* width: 300px; */
+	}
+
+	.who-to-follow-section {
+		display: none;
+		/* width: 300px; */
+	}
+
+	.romania-trends {
+		display: none;
+		/* width: 300px; */
+	}
 }
